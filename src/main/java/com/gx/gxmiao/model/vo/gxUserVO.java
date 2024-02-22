@@ -1,4 +1,4 @@
-package com.gx.gxmiao.model;
+package com.gx.gxmiao.model.vo;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -8,20 +8,21 @@ import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 /**
- * ClassName: gxRole
- * Package: com.gx.hmanage.model
+ * ClassName: gxUserVO
+ * Package: com.gx.gxmiao.model.vo
  * Description:
  * Author: gx
- * Creat: 2024/1/11 10:25
+ * Creat: 2024/2/21 1:21
  */
 @Data
-@Repository
 @NoArgsConstructor
+@Repository
 @AllArgsConstructor
-@TableName(value = "roles")
-public class gxRole {
-    @TableField(value = "id")
+public class gxUserVO {
     private Long id;
-    @TableField(value = "role_name")
-    private String roleName;
+    private String account;
+    private String nickname;
+    private Long roleId;
+    private Boolean isMuted;
+    private Double money; // 假设这是存放用户金钱的字段
 }

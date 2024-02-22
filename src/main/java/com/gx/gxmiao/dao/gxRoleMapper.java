@@ -12,5 +12,5 @@ import com.gx.gxmiao.model.gxRole;
  * Creat: 2024/1/27 23:55
  * @author 11
  */
-public interface gxRolesMapper extends BaseMapper<gxRole> {
+public interface gxRoleMapper extends BaseMapper<gxRole> {
 }
